@@ -1,2 +1,2 @@
-# preact-typescript-template
-A template for web development on Preact CLI using TypeScript.
+# www.tuxsnct.com
+tuxsnct's link collection
