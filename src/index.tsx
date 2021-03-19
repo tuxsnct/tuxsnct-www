@@ -1,14 +1,15 @@
-import { Fragment, FunctionalComponent, h } from 'preact'
-import tw from 'twin.macro'
+import { FunctionalComponent, h } from 'preact'
+import Redirect from './components/Redirect'
+import { Router } from 'preact-router'
+import Welcome from './routes/Welcome'
 
-const IndexPage: FunctionalComponent = () => {
-  const Heading = tw.h1`font-sans text-4xl`
-
+const App: FunctionalComponent = () => {
   return (
-    <Fragment>
-      <Heading>preact-typescript-template</Heading>
-    </Fragment>
+    <Router>
+      <Welcome path="/" />
+      <Redirect path="/:path*" to="/" />
+    </Router>
   )
 }
 
-export default IndexPage
+export default App

@@ -5,8 +5,8 @@
 		"moduleResolution": "node"
 	},
 	"include": [
+		"**/*.js",
 		"**/*.ts",
-		"src/**/*.ts",
-		"src/**.tsx"
+		"**/*.tsx"
 	]
 }

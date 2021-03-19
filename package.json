@@ -1,13 +1,12 @@
 {
-  "name": "preact-typescript-template",
-  "version": "1.0.0",
+  "name": "tuxsnct.com",
   "private": true,
-  "description": "A template for web development on Preact CLI using TypeScript.",
-  "repository": "https://github.com/tuxsnct/preact-typescript-template",
+  "description": "tuxsnct's link collection",
+  "repository": "https://github.com/tuxsnct/tuxsnct.com",
   "license": "MIT",
   "author": "Tux <tuxsnct@gmail.com>",
   "scripts": {
-    "build": "preact build",
+    "build": "preact build --prerenderUrls ./prerender-urls.json",
     "build:analyze": "yarn build --analyze",
     "clean": "rimraf build",
     "dev": "preact watch",
@@ -21,6 +20,8 @@
   "dependencies": {
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
+    "@iconify-icons/mdi": "^1.1.12",
+    "@iconify/react": "^1.1.4",
     "preact": "^10.5.13",
     "preact-render-to-string": "^5.1.16",
     "preact-router": "^3.2.1",
