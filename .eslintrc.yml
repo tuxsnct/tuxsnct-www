@@ -1,0 +1,8 @@
+env:
+  es2020: true
+parserOptions:
+  project: './tsconfig.json'
+extends:
+  - 'tuxsnct-typescript'
+rules:
+  no-use-before-define: 0
