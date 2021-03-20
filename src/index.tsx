@@ -8,25 +8,25 @@ import twitterIcon from '@iconify-icons/mdi/twitter'
 const global = css`
   html,
   body {
-    ${tw`bg-yellow-500`}
-    font-family: 'JetBrains Mono', monospace, sans-serif;
+    ${tw`bg-gray-100 dark:bg-gray-900`}
+    font-family: 'Ubuntu', sans-serif;
   }
   * {
     margin: 0;
     padding: 0;
   }
 `
-const Main = tw.main`p-4 box-border bg-gray-100 dark:bg-black`
-const Heading = tw.h1`m-4 font-bold text-4xl dark:text-gray-100 break-words`
+const Main = tw.main`p-6 box-border bg-gray-100 dark:bg-gray-900`
+const Heading = tw.h1`mx-4 mt-4 mb-8 text-5xl text-gray-900 dark:text-gray-100 break-words`
 const LinkCollection = tw.nav`m-4`
 const LinkItem = tw.a`
-  block w-full mb-4 px-4 py-2 border-2 border-solid dark:border-white
-  rounded no-underline text-xl text-black dark:text-white box-border
+  block w-full mb-4 px-4 py-2 bg-gray-900 dark:bg-gray-100 rounded no-underline box-border
+  text-xl text-gray-100 dark:text-gray-900 whitespace-nowrap overflow-hidden overflow-ellipsis
 `
-const Footer = tw.footer`m-4 bg-yellow-500`
+const Footer = tw.footer`p-4 bg-yellow-500`
 const FooterSocial = tw.div`flex items-center justify-center h-12 m-2`
-const FooterCopyright = tw.span`block m-2 text-lg text-center`
-const IconLinkContainer = tw.a`flex items-center justify-center w-12 mx-2 h-full`
+const FooterCopyright = tw.span`block m-2 text-lg text-gray-900 text-center`
+const IconLinkContainer = tw.a`flex items-center justify-center w-12 mx-2 h-full text-gray-900`
 const IconLink = ({ href, icon, ...rest }) => {
   return (
     <IconLinkContainer href={href}>
@@ -53,8 +53,8 @@ const Welcome: FunctionalComponent = () => {
       </Main>
       <Footer>
         <FooterSocial>
-          <IconLink icon={githubIcon} href="https://github.com/tuxsnct" color="#211f1f" />
-          <IconLink icon={twitterIcon} href="https://twitter.com/tuxsnct" color="#1da1f2" />
+          <IconLink icon={githubIcon} href="https://github.com/tuxsnct" />
+          <IconLink icon={twitterIcon} href="https://twitter.com/tuxsnct" />
         </FooterSocial>
         <FooterCopyright>
           &copy; {new Date().getFullYear()} tuxsnct
