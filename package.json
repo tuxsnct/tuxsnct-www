@@ -1,8 +1,8 @@
 {
-  "name": "www.tuxsnct.com",
+  "name": "tuxsnct-www",
   "private": true,
   "description": "tuxsnct's link collection",
-  "repository": "https://github.com/tuxsnct/www.tuxsnct.com",
+  "repository": "https://github.com/tuxsnct/tuxsnct-www",
   "license": "MIT",
   "author": "Tux <tuxsnct@gmail.com>",
   "scripts": {

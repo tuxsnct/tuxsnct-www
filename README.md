@@ -1,2 +1,2 @@
-# www.tuxsnct.com
+# tuxsnct-www
 tuxsnct's link collection
