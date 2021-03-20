@@ -1,3 +1,4 @@
+import 'typeface-ubuntu'
 import { Fragment, FunctionalComponent, h } from 'preact'
 import { Global, css } from '@emotion/react'
 import { InlineIcon } from '@iconify/react'
